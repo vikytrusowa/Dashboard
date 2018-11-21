@@ -1,0 +1,13 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
