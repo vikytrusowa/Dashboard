@@ -3,20 +3,23 @@
 @import "mixines";
 
 
+.wrapper {
+  display: flex;
+  .container();
+  &__main{
+    .column();
+    width: calc(100% - 240px);
+  }
+}
+
 .header {
   .container();
   .row();
-  justify-content: space-between;
+  justify-content: flex-end;
   background: @white;
   height: 70px;
 
-  &__logo {
-    background: #42c38c;
-    width: 240px;
-    height: 70px;
-    .row();
-    justify-content: center;
-  }
+
 
   &__icon {
     .row();
@@ -153,15 +156,22 @@
   }
 }
 .main {
-  .container();
-  .row();
   background: #eff7ed;
+  height: calc(100% - 70px);
 }
 
 .sidebar {
   background: #35bf7e;
   width: 240px;
-  height: calc(101vh - 70px);
+  min-height: 100vh;
+
+  &__logo {
+    background: #42c38c;
+    width: 240px;
+    height: 70px;
+    .row();
+    justify-content: center;
+  }
 
   &__profile {
     .row();
@@ -591,9 +601,6 @@
         width: 708px;
   }
 
-  .sidebar {
-    height: 112vh;
-  }
 
 }
 
@@ -608,9 +615,6 @@
         width: 525px;
   }
 
-  .sidebar {
-    height: 138vh;
-  }
 
 }
 @media screen and (max-width: 850px){

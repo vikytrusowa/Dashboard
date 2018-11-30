@@ -8,42 +8,13 @@
     <link rel="icon" href="img/favicon.png">
 </head>
 <body>
-<header class="header">
-    <div class="header__logo">
-        <img src="img/sociotrack.svg">
-    </div>
-    <div class="header__icon">
-        <button class="notification" id="notification">
-            <img src="img/notification.svg" alt="notification">
-            <span class="notification__number">2</span>
-        </button>
-        <div class="window none">
-            <div class="window__heading">
-                <h4 class="window__heading--name">Notification</h4>
-                <button class="title__button" id="closeWindow"></button>
-            </div>
-            <p class="window__text"><span class="window__text--name">Brigid Dawson</span> followed you</p>
-            <span class="window__data">4 hours ago</span>
-            <p class="window__text"><span class="window__text--name">john Dwyer</span> liked your post</p>
-            <span class="window__data">Yesterday</span>
-        </div>
-        <button class="header__icon--search" id="search">
-            <img src="img/search-icon.svg" alt="search">
-        </button>
-        <div class="input none">
-            <div class="input__heading">
-                <span class="input__heading--name">Search</span>
-                <button class="title__button " id="closeInput"></button>
-            </div>
-            <input type="text" placeholder="Search" class="input__text" id="inputId">
-            <button class="input__button" id="send"><img src="img/search-icon.svg" alt="search"></button>
+<div class="wrapper">
 
-        </div>
 
-    </div>
-</header>
-<section class="main">
     <div class="sidebar">
+        <div class="sidebar__logo">
+            <img src="img/sociotrack.svg">
+        </div>
         <div class="sidebar__profile">
             <img src="img/Avatar.png" alt="avatar" class="sidebar__profile--image">
             <div class="info">
@@ -71,163 +42,201 @@
             </ul>
         </div>
     </div>
-    <div class="dashboard">
-        <div class="social">
-            <div class="dashboard__heading">
-                <h1 class="dashboard__heading--title">@abhisek.das</h1>
-                <button class="dashboard__heading--button" id="openModal">+ Add Social Profile</button>
-                <div class="modal none">
-                    <div class="modal__element">
-                        <div class="title">
-                            <h2 class="title__name">Add Social Profile</h2>
-                            <button class="title__button" id="close"></button>
-                        </div>
-                        <span class="modal__element--text">Add new social profile for tracking</span>
-                        <form class="form">
-                            <label class="form__name">URL</label>
-                            <input placeholder="https://twitter.com/username" class="form__input">
-                            <button class="form__button">Lookup</button>
-                        </form>
+    <div class="wrapper__main">
+        <div class="header">
+
+            <div class="header__icon">
+                <button class="notification" id="notification">
+                    <img src="img/notification.svg" alt="notification">
+                    <span class="notification__number">2</span>
+                </button>
+                <div class="window none">
+                    <div class="window__heading">
+                        <h4 class="window__heading--name">Notification</h4>
+                        <button class="title__button" id="closeWindow"></button>
                     </div>
+                    <p class="window__text"><span class="window__text--name">Brigid Dawson</span> followed you</p>
+                    <span class="window__data">4 hours ago</span>
+                    <p class="window__text"><span class="window__text--name">john Dwyer</span> liked your post</p>
+                    <span class="window__data">Yesterday</span>
                 </div>
-            </div>
-            <div class="dashboard__data">
-                <a class="dashboard__data--element  activ" href="#" id="last">Last day</a>
-                <a class="dashboard__data--element " href="#" id="week">Week</a>
-                <a class="dashboard__data--element " href="#" id="month">Month</a>
-            </div>
+                <button class="header__icon--search" id="search">
+                    <img src="img/search-icon.svg" alt="search">
+                </button>
+                <div class="input none">
+                    <div class="input__heading">
+                        <span class="input__heading--name">Search</span>
+                        <button class="title__button " id="closeInput"></button>
+                    </div>
+                    <input type="text" placeholder="Search" class="input__text" id="inputId">
+                    <button class="input__button" id="send"><img src="img/search-icon.svg" alt="search"></button>
 
+                </div>
 
+            </div>
         </div>
-        <div class="items">
-            <div class="items__element">
-                <div class="box facebook">
-                    <img src="img/Facebook.svg">
-                    <h2 class="box__number">1,701</h2>
-                    <p class="box__text">Followers</p>
-                    <span class="box__rating">+4</span>
-                    <img src="img/arrow-up.svg">
-                </div>
-                <div class="username">
-                    <img src="img/userpic-fb.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Facebook</span>
-                        <a href="https://www.facebook.com/AbirChatterjee.bengalistar/?__tn__=%2Cd%2CP-R&eid=ARC4YKuBLGvpitCbNaKjiCQ4xbs3TpPBiKAc9RcYLcG4Gk5Zz8PY76_iO7pTylU8B1xSJmiWpkg0Vbs5"
-                           class="username__info--name">@abhisek.daas</a>
+        <div class="main">
+            <div class="dashboard">
+                <div class="social">
+                    <div class="dashboard__heading">
+                        <h1 class="dashboard__heading--title">@abhisek.das</h1>
+                        <button class="dashboard__heading--button" id="openModal">+ Add Social Profile</button>
+                        <div class="modal none">
+                            <div class="modal__element">
+                                <div class="title">
+                                    <h2 class="title__name">Add Social Profile</h2>
+                                    <button class="title__button" id="close"></button>
+                                </div>
+                                <span class="modal__element--text">Add new social profile for tracking</span>
+                                <form class="form">
+                                    <label class="form__name">URL</label>
+                                    <input placeholder="https://twitter.com/username" class="form__input">
+                                    <button class="form__button">Lookup</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box twitter">
-                    <img src="img/Twitter.svg">
-                    <h2 class="box__number">1,567</h2>
-                    <p class="box__text">Followers</p>
-                    <span class="box__rating">-3</span>
-                    <img src="img/arrow-down.svg">
-                </div>
-                <div class="username">
-                    <img src="img/userpic-tw.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Twitter</span>
-                        <a href="https://twitter.com/wholetthedasout" class="username__info--name">@wholetthedasout</a>
+                    <div class="dashboard__data">
+                        <a class="dashboard__data--element  activ" href="#" id="last">Last day</a>
+                        <a class="dashboard__data--element " href="#" id="week">Week</a>
+                        <a class="dashboard__data--element " href="#" id="month">Month</a>
                     </div>
+
+
                 </div>
-            </div>
-            <div class="items__element">
-                <div class="box instagram">
-                    <img src="img/Instagram.svg">
-                    <h2 class="box__number">1,139</h2>
-                    <p class="box__text">Followers</p>
-                    <span class="box__rating box__rating--margin">+11</span>
-                    <img src="img/arrow-up.svg">
-                </div>
-                <div class="username">
-                    <img src="img/userpic.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Instagram</span>
-                        <a href="https://www.instagram.com/wholetthedasout/" class="username__info--name">@wholetthedasout</a>
+                <div class="items">
+                    <div class="items__element">
+                        <div class="box facebook">
+                            <img src="img/Facebook.svg">
+                            <h2 class="box__number">1,701</h2>
+                            <p class="box__text">Followers</p>
+                            <span class="box__rating">+4</span>
+                            <img src="img/arrow-up.svg">
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic-fb.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Facebook</span>
+                                <a href="https://www.facebook.com/AbirChatterjee.bengalistar/?__tn__=%2Cd%2CP-R&eid=ARC4YKuBLGvpitCbNaKjiCQ4xbs3TpPBiKAc9RcYLcG4Gk5Zz8PY76_iO7pTylU8B1xSJmiWpkg0Vbs5"
+                                   class="username__info--name">@abhisek.daas</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box linkedin">
-                    <img src="img/LinkedIn.svg">
-                    <h2 class="box__number">2,016</h2>
-                    <p class="box__text">Followers</p>
-                    <span class="box__rating box__rating--margin">+39</span>
-                    <img src="img/arrow-up.svg">
-                </div>
-                <div class="username">
-                    <img src="img/userpic-fb.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Linkedin</span>
-                        <a href="https://in.linkedin.com/pub/dir/Abhisek/Das"
-                           class="username__info--name">@abhisekd3</a>
+                    <div class="items__element">
+                        <div class="box twitter">
+                            <img src="img/Twitter.svg">
+                            <h2 class="box__number">1,567</h2>
+                            <p class="box__text">Followers</p>
+                            <span class="box__rating">-3</span>
+                            <img src="img/arrow-down.svg">
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic-tw.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Twitter</span>
+                                <a href="https://twitter.com/wholetthedasout"
+                                   class="username__info--name">@wholetthedasout</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box youtube">
-                    <img src="img/Youtube.svg">
-                    <h2 class="box__number">3,190</h2>
-                    <p class="box__text">Subscribers</p>
-                    <span class="box__rating box__rating--margin">+22</span>
-                    <img src="img/arrow-up.svg">
-                </div>
-                <div class="username">
-                    <img src="img/userpic-yt.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">YouTube</span>
-                        <a href="https://www.youtube.com/?gl=UA&hl=ru" class="username__info--name">@TheAbnisekD</a>
+                    <div class="items__element">
+                        <div class="box instagram">
+                            <img src="img/Instagram.svg">
+                            <h2 class="box__number">1,139</h2>
+                            <p class="box__text">Followers</p>
+                            <span class="box__rating box__rating--margin">+11</span>
+                            <img src="img/arrow-up.svg">
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Instagram</span>
+                                <a href="https://www.instagram.com/wholetthedasout/" class="username__info--name">@wholetthedasout</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box snapchat">
-                    <img src="img/Snapchat.svg">
-                    <h2 class="box__number box__black">8,754</h2>
-                    <p class="box__text box__black">Snap Score</p>
-                </div>
-                <div class="username">
-                    <img src="img/userpic.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Snapchat</span>
-                        <a href="https://www.snapchat.com/add/abhishek.deore" class="username__info--name">@abhisekd</a>
+                    <div class="items__element">
+                        <div class="box linkedin">
+                            <img src="img/LinkedIn.svg">
+                            <h2 class="box__number">2,016</h2>
+                            <p class="box__text">Followers</p>
+                            <span class="box__rating box__rating--margin">+39</span>
+                            <img src="img/arrow-up.svg">
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic-fb.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Linkedin</span>
+                                <a href="https://in.linkedin.com/pub/dir/Abhisek/Das"
+                                   class="username__info--name">@abhisekd3</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box google">
-                    <img src="img/GooglePlus.svg">
-                    <h2 class="box__number">1,033</h2>
-                    <p class="box__text">Followers</p>
-                </div>
-                <div class="username">
-                    <img src="img/userpic.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Google+</span>
-                        <a href="https://mail.google.com/" class="username__info--name">@+AbhisekDas</a>
+                    <div class="items__element">
+                        <div class="box youtube">
+                            <img src="img/Youtube.svg">
+                            <h2 class="box__number">3,190</h2>
+                            <p class="box__text">Subscribers</p>
+                            <span class="box__rating box__rating--margin">+22</span>
+                            <img src="img/arrow-up.svg">
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic-yt.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">YouTube</span>
+                                <a href="https://www.youtube.com/?gl=UA&hl=ru"
+                                   class="username__info--name">@TheAbnisekD</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="items__element">
-                <div class="box vine">
-                    <img src="img/Vine.svg">
-                    <h2 class="box__number">1,045</h2>
-                    <p class="box__text">Loops</p>
-                </div>
-                <div class="username">
-                    <img src="img/userpic-vine.png" class="username__image">
-                    <div class="username__info">
-                        <span class="username__info--social">Vine</span>
-                        <a href="https://vine.co/" class="username__info--name">@131613922824522136....</a>
+                    <div class="items__element">
+                        <div class="box snapchat">
+                            <img src="img/Snapchat.svg">
+                            <h2 class="box__number box__black">8,754</h2>
+                            <p class="box__text box__black">Snap Score</p>
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Snapchat</span>
+                                <a href="https://www.snapchat.com/add/abhishek.deore"
+                                   class="username__info--name">@abhisekd</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items__element">
+                        <div class="box google">
+                            <img src="img/GooglePlus.svg">
+                            <h2 class="box__number">1,033</h2>
+                            <p class="box__text">Followers</p>
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Google+</span>
+                                <a href="https://mail.google.com/" class="username__info--name">@+AbhisekDas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items__element">
+                        <div class="box vine">
+                            <img src="img/Vine.svg">
+                            <h2 class="box__number">1,045</h2>
+                            <p class="box__text">Loops</p>
+                        </div>
+                        <div class="username">
+                            <img src="img/userpic-vine.png" class="username__image">
+                            <div class="username__info">
+                                <span class="username__info--social">Vine</span>
+                                <a href="https://vine.co/" class="username__info--name">@131613922824522136....</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="js/main.js"></script>
 </body>
