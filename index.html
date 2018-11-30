@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
 </head>
 <body>
 <header class="header">
@@ -12,11 +13,33 @@
         <img src="img/sociotrack.svg">
     </div>
     <div class="header__icon">
-        <div class="notification">
+        <button class="notification" id="notification">
             <img src="img/notification.svg" alt="notification">
             <span class="notification__number">2</span>
+        </button>
+        <div class="window none">
+            <div class="window__heading">
+                <h4 class="window__heading--name">Notification</h4>
+                <button class="title__button" id="closeWindow"></button>
+            </div>
+            <p class="window__text"><span class="window__text--name">Brigid Dawson</span> followed you</p>
+            <span class="window__data">4 hours ago</span>
+            <p class="window__text"><span class="window__text--name">john Dwyer</span> liked your post</p>
+            <span class="window__data">Yesterday</span>
         </div>
-        <img src="img/search-icon.svg" alt="search">
+        <button class="header__icon--search" id="search">
+            <img src="img/search-icon.svg" alt="search">
+        </button>
+        <div class="input none">
+            <div class="input__heading">
+                <span class="input__heading--name">Search</span>
+                <button class="title__button " id="closeInput"></button>
+            </div>
+            <input type="text" placeholder="Search" class="input__text" id="inputId">
+            <button class="input__button" id="send"><img src="img/search-icon.svg" alt="search"></button>
+
+        </div>
+
     </div>
 </header>
 <section class="main">
@@ -30,34 +53,34 @@
         </div>
         <menu class="sidebar__item">
             <ul class="menu">
-                <li class="menu__element">Dashboard</li>
-                <li class="menu__element">Social Feed</li>
-                <li class="menu__element">Invite Friends</li>
-                <li class="menu__element">Settings</li>
-                <li class="menu__element">Lot out</li>
+                <li><a href="#" class="menu__element">Dashboard</a></li>
+                <li><a href="#" class="menu__element">Social Feed</a></li>
+                <li><a href="#" class="menu__element">Invite Friends</a></li>
+                <li><a href="#" class="menu__element">Settings</a></li>
+                <li><a href="#" class="menu__element">Lot out</a></li>
             </ul>
         </menu>
         <div class="sidebar__footer">
             <div class="sidebar__footer--line"></div>
             <ul class="list">
-                <li class="list__element">About</li>
-                <li class="list__element">Therms</li>
-                <li class="list__element">Privacy</li>
-                <li class="list__element">Help</li>
-                <li class="list__element">Report</li>
+                <li class="list__element"><a href="#" class="list__element--link">About</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Therms</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Privacy</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Help</a></li>
+                <li class="list__element"><a href="#" class="list__element--link">Report</a></li>
             </ul>
         </div>
     </div>
     <div class="dashboard">
-        <div class="">
+        <div class="social">
             <div class="dashboard__heading">
                 <h1 class="dashboard__heading--title">@abhisek.das</h1>
-                <button class="dashboard__heading--button">+ Add Social Profile</button>
+                <button class="dashboard__heading--button" id="openModal">+ Add Social Profile</button>
                 <div class="modal none">
                     <div class="modal__element">
                         <div class="title">
                             <h2 class="title__name">Add Social Profile</h2>
-                            <button class="title__button"></button>
+                            <button class="title__button" id="close"></button>
                         </div>
                         <span class="modal__element--text">Add new social profile for tracking</span>
                         <form class="form">
@@ -69,9 +92,9 @@
                 </div>
             </div>
             <div class="dashboard__data">
-                <span class="dashboard__data--element">Last day</span>
-                <span class="dashboard__data--element">Week</span>
-                <span class="dashboard__data--element">Month</span>
+                <a class="dashboard__data--element  activ" href="#" id="last">Last day</a>
+                <a class="dashboard__data--element " href="#" id="week">Week</a>
+                <a class="dashboard__data--element " href="#" id="month">Month</a>
             </div>
 
 
@@ -79,17 +102,11 @@
         <div class="items">
             <div class="items__element">
                 <div class="box facebook">
-                    <div class="box__element">
-                        <img src="img/Facebook.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">1,701</h2>
-                            <span class="followers__text">Followers</span>
-                        </div>
-                    </div>
-                    <div class="box__info">
-                        <span class="box__info--number">+4</span>
-                        <img src="img/arrow-up.svg">
-                    </div>
+                    <img src="img/Facebook.svg">
+                    <h2 class="box__number">1,701</h2>
+                    <p class="box__text">Followers</p>
+                    <span class="box__rating">+4</span>
+                    <img src="img/arrow-up.svg">
                 </div>
                 <div class="username">
                     <img src="img/userpic-fb.png" class="username__image">
@@ -102,17 +119,11 @@
             </div>
             <div class="items__element">
                 <div class="box twitter">
-                    <div class="box__element">
-                        <img src="img/Twitter.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">1,567</h2>
-                            <span class="followers__text">Followers</span>
-                        </div>
-                    </div>
-                    <div class="box__info">
-                        <span class="box__info--number">-3</span>
-                        <img src="img/arrow-down.svg">
-                    </div>
+                    <img src="img/Twitter.svg">
+                    <h2 class="box__number">1,567</h2>
+                    <p class="box__text">Followers</p>
+                    <span class="box__rating">-3</span>
+                    <img src="img/arrow-down.svg">
                 </div>
                 <div class="username">
                     <img src="img/userpic-tw.png" class="username__image">
@@ -124,17 +135,11 @@
             </div>
             <div class="items__element">
                 <div class="box instagram">
-                    <div class="box__element">
-                        <img src="img/Instagram.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">1,139</h2>
-                            <span class="followers__text">Followers</span>
-                        </div>
-                    </div>
-                    <div class="box__info">
-                        <span class="box__info--number">+11</span>
-                        <img src="img/arrow-up.svg">
-                    </div>
+                    <img src="img/Instagram.svg">
+                    <h2 class="box__number">1,139</h2>
+                    <p class="box__text">Followers</p>
+                    <span class="box__rating box__rating--margin">+11</span>
+                    <img src="img/arrow-up.svg">
                 </div>
                 <div class="username">
                     <img src="img/userpic.png" class="username__image">
@@ -146,17 +151,11 @@
             </div>
             <div class="items__element">
                 <div class="box linkedin">
-                    <div class="box__element">
-                        <img src="img/LinkedIn.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">2,016</h2>
-                            <span class="followers__text">Followers</span>
-                        </div>
-                    </div>
-                    <div class="box__info">
-                        <span class="box__info--number">+39</span>
-                        <img src="img/arrow-up.svg">
-                    </div>
+                    <img src="img/LinkedIn.svg">
+                    <h2 class="box__number">2,016</h2>
+                    <p class="box__text">Followers</p>
+                    <span class="box__rating box__rating--margin">+39</span>
+                    <img src="img/arrow-up.svg">
                 </div>
                 <div class="username">
                     <img src="img/userpic-fb.png" class="username__image">
@@ -169,17 +168,11 @@
             </div>
             <div class="items__element">
                 <div class="box youtube">
-                    <div class="box__element">
-                        <img src="img/Youtube.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">3,190</h2>
-                            <span class="followers__text">Subscribers</span>
-                        </div>
-                    </div>
-                    <div class="box__info">
-                        <span class="box__info--number">+22</span>
-                        <img src="img/arrow-up.svg">
-                    </div>
+                    <img src="img/Youtube.svg">
+                    <h2 class="box__number">3,190</h2>
+                    <p class="box__text">Subscribers</p>
+                    <span class="box__rating box__rating--margin">+22</span>
+                    <img src="img/arrow-up.svg">
                 </div>
                 <div class="username">
                     <img src="img/userpic-yt.png" class="username__image">
@@ -191,14 +184,9 @@
             </div>
             <div class="items__element">
                 <div class="box snapchat">
-                    <div class="box__element">
-                        <img src="img/Snapchat.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">8,754</h2>
-                            <span class="followers__text">Snap Score</span>
-                        </div>
-                    </div>
-
+                    <img src="img/Snapchat.svg">
+                    <h2 class="box__number box__black">8,754</h2>
+                    <p class="box__text box__black">Snap Score</p>
                 </div>
                 <div class="username">
                     <img src="img/userpic.png" class="username__image">
@@ -210,13 +198,9 @@
             </div>
             <div class="items__element">
                 <div class="box google">
-                    <div class="box__element">
-                        <img src="img/GooglePlus.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">1,033</h2>
-                            <span class="followers__text">Followers</span>
-                        </div>
-                    </div>
+                    <img src="img/GooglePlus.svg">
+                    <h2 class="box__number">1,033</h2>
+                    <p class="box__text">Followers</p>
                 </div>
                 <div class="username">
                     <img src="img/userpic.png" class="username__image">
@@ -228,13 +212,9 @@
             </div>
             <div class="items__element">
                 <div class="box vine">
-                    <div class="box__element">
-                        <img src="img/Vine.svg">
-                        <div class="followers">
-                            <h2 class="followers__number">1,045</h2>
-                            <span class="followers__text">Loops</span>
-                        </div>
-                    </div>
+                    <img src="img/Vine.svg">
+                    <h2 class="box__number">1,045</h2>
+                    <p class="box__text">Loops</p>
                 </div>
                 <div class="username">
                     <img src="img/userpic-vine.png" class="username__image">
