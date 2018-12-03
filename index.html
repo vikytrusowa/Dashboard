@@ -22,7 +22,7 @@
                 <span class="info__followers">10,968 Followers</span>
             </div>
         </div>
-        <menu class="sidebar__item">
+        <menu class="sidebar__menu">
             <ul class="menu">
                 <li><a href="#" class="menu__element">Dashboard</a></li>
                 <li><a href="#" class="menu__element">Social Feed</a></li>
@@ -77,10 +77,10 @@
         </div>
         <div class="main">
             <div class="dashboard">
-                <div class="social">
-                    <div class="dashboard__heading">
-                        <h1 class="dashboard__heading--title">@abhisek.das</h1>
-                        <button class="dashboard__heading--button" id="openModal">+ Add Social Profile</button>
+                <div class="tagline">
+                    <div class="tagline__heading">
+                        <h1 class="tagline__heading--title">@abhisek.das</h1>
+                        <button class="tagline__heading--button" id="openModal">+ Add Social Profile</button>
                         <div class="modal none">
                             <div class="modal__element">
                                 <div class="title">
@@ -96,22 +96,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dashboard__data">
-                        <a class="dashboard__data--element  activ" href="#" id="last">Last day</a>
-                        <a class="dashboard__data--element " href="#" id="week">Week</a>
-                        <a class="dashboard__data--element " href="#" id="month">Month</a>
+                    <div class="tagline__filter">
+                        <a class="tagline__filter--element  activ" href="#" id="last">Last day</a>
+                        <a class="tagline__filter--element " href="#" id="week">Week</a>
+                        <a class="tagline__filter--element " href="#" id="month">Month</a>
                     </div>
 
 
                 </div>
-                <div class="items">
-                    <div class="items__element">
+                <div class="socials">
+                    <div class="socials__element">
                         <div class="box facebook">
                             <img src="img/Facebook.svg">
                             <h2 class="box__number">1,701</h2>
                             <p class="box__text">Followers</p>
-                            <span class="box__rating">+4</span>
-                            <img src="img/arrow-up.svg">
+                            <div class="box__rating">
+                                <span class="box__rating--number">+4</span>
+                                <img src="img/arrow-up.svg">
+                            </div>
+
                         </div>
                         <div class="username">
                             <img src="img/userpic-fb.png" class="username__image">
@@ -122,13 +125,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box twitter">
                             <img src="img/Twitter.svg">
                             <h2 class="box__number">1,567</h2>
                             <p class="box__text">Followers</p>
-                            <span class="box__rating">-3</span>
-                            <img src="img/arrow-down.svg">
+                            <div class="box__rating">
+                                <span class="box__rating--number">-3</span>
+                                <img src="img/arrow-down.svg">
+                            </div>
                         </div>
                         <div class="username">
                             <img src="img/userpic-tw.png" class="username__image">
@@ -139,13 +144,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box instagram">
                             <img src="img/Instagram.svg">
                             <h2 class="box__number">1,139</h2>
                             <p class="box__text">Followers</p>
-                            <span class="box__rating box__rating--margin">+11</span>
-                            <img src="img/arrow-up.svg">
+                            <div class="box__rating">
+                                <span class="box__rating--number">+11</span>
+                                <img src="img/arrow-up.svg">
+                            </div>
                         </div>
                         <div class="username">
                             <img src="img/userpic.png" class="username__image">
@@ -155,13 +162,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box linkedin">
                             <img src="img/LinkedIn.svg">
                             <h2 class="box__number">2,016</h2>
                             <p class="box__text">Followers</p>
-                            <span class="box__rating box__rating--margin">+39</span>
-                            <img src="img/arrow-up.svg">
+                            <div class="box__rating">
+                                <span class="box__rating--number">+39</span>
+                                <img src="img/arrow-up.svg">
+                            </div>
                         </div>
                         <div class="username">
                             <img src="img/userpic-fb.png" class="username__image">
@@ -172,13 +181,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box youtube">
                             <img src="img/Youtube.svg">
                             <h2 class="box__number">3,190</h2>
                             <p class="box__text">Subscribers</p>
-                            <span class="box__rating box__rating--margin">+22</span>
-                            <img src="img/arrow-up.svg">
+                            <div class="box__rating">
+                                <span class="box__rating--number">+22</span>
+                                <img src="img/arrow-up.svg">
+                            </div>
                         </div>
                         <div class="username">
                             <img src="img/userpic-yt.png" class="username__image">
@@ -189,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box snapchat">
                             <img src="img/Snapchat.svg">
                             <h2 class="box__number box__black">8,754</h2>
@@ -204,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box google">
                             <img src="img/GooglePlus.svg">
                             <h2 class="box__number">1,033</h2>
@@ -218,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="items__element">
+                    <div class="socials__element">
                         <div class="box vine">
                             <img src="img/Vine.svg">
                             <h2 class="box__number">1,045</h2>

@@ -177,22 +177,23 @@
     .row();
     width: 167px;
     justify-content: space-around;
-    margin: 15% 6%;
+    margin: 15% 6% 3%;
 
     &--image {
       width: 45px;
     }
   }
 
-  &__item {
-    margin: 0 auto 145%;
-    width: 200px;
+  &__menu {
+    padding: 20px;
   }
 
   &__footer {
     height: 67px;
     width: 171px;
-    margin: 0 auto;
+    position: fixed;
+    bottom: 15px;
+    left: 30px;
     .column();
     justify-content: space-between;
 
@@ -229,7 +230,6 @@
 }
 
 .menu {
-  width: 200px;
   height: 233px;
   &__element {
     font-family: Roboto, sans-serif;
@@ -239,7 +239,7 @@
     font-size: 14px;
     color: @white;
     height: 50px;
-    width: 200px;
+    width: 100%;
     text-indent: 20px;
     text-decoration: none;
     .row();
@@ -277,10 +277,30 @@
 }
 
 .dashboard {
-  width: 1050px;
+  width: 950px;
   margin: 0 auto;
   padding: 5%;
 
+
+
+
+}
+.activ{
+  position: relative;
+
+  &:after {
+    content: "";
+    border: 2px solid #B8E986;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -15px;
+    width: 85%;
+    left: 0;
+  }
+}
+.tagline{
+  height: 95px;
+  margin: 0 0 20px 0;
 
   &__heading {
     .row();
@@ -311,7 +331,7 @@
       cursor: pointer;
     }
   }
-  &__data {
+  &__filter {
     .row();
     justify-content: space-between;
     width: 210px;
@@ -328,34 +348,17 @@
 
     }
   }
-
 }
-.activ{
-  position: relative;
-
-  &:after {
-    content: "";
-    border: 2px solid #B8E986;
-    border-radius: 5px;
-    position: absolute;
-    bottom: -15px;
-    width: 85%;
-    left: 0;
-  }
-}
-.social{
-  width: 950px;
-  height: 95px;
-  margin: 0 0 20px 0;
-}
-.items {
-  width: 1012px;
+.socials {
+  .row();
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   &__element {
     width: 200px;
     height: 245px;
     display: inline-block;
-    margin: 0 50px 20px 0;
+    margin-bottom: 20px;
   }
 
 }
@@ -382,18 +385,17 @@
     margin: 0 0 20px;
   }
   &__rating {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 26px;
-    color: @white;
-    letter-spacing: 2px;
-    margin: 0 0 0 115px;
-
-    &--margin{
-      margin: 0 0 0 99px;
+    text-align: end;
+    &--number{
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 26px;
+      color: @white;
+      letter-spacing: 2px;
     }
+
   }
 &__black{
   color: black;
@@ -594,12 +596,7 @@
   .dashboard {
     width: 760px;
   }
-  .items {
-        width: 760px;
-  }
-  .social {
-        width: 708px;
-  }
+
 
 
 }
@@ -608,12 +605,7 @@
   .dashboard {
         width: 508px;
   }
-  .social {
-    width: 455px;
-  }
-  .items {
-        width: 525px;
-  }
+
 
 
 }
@@ -622,14 +614,6 @@
     padding: 0;
     width: 455px;
   }
-  .social {
-    width: 428px;
-  }
-  .items {
-    width: 460px;
-  }
-  .items__element{
-    margin: 0 20px 20px 0;
-  }
+
 
 }
